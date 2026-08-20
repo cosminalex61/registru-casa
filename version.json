@@ -1,6 +1,6 @@
 {
-  "version": "2.9.0",
-  "notes": "• Perioadă unificată (buton + preseturi: luna curentă/trecută, an, personalizat)\n• Documente: Nr. crt. global 1,2,3…\n• Folder fișier reparat\n• Butoane mai consistente, fără competiție vizuală Șterge vs Adaugă",
+  "version": "3.0.0",
+  "notes": "• UI redesign: antet minimalist, căutare, butoane prioritizate\n• Șterge activ doar la selecție; toast-uri non-intruzive\n• Tabel: sume aliniate dreapta, empty state, footer sticky",
   "download_url": "https://github.com/cosminalex61/registru-casa/releases/latest/download/RegistruCasa.zip",
   "mandatory": false
 }
