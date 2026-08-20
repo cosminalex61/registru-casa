@@ -1,6 +1,6 @@
 {
-  "version": "2.8.6",
-  "notes": "• Buton «Caută actualizare» în antet\n• Istoric versiuni restructurat (lista de schimbări pe fiecare versiune)\n• La update se afișează ce s-a modificat în versiunea nouă\n• Baza de date și backup-urile nu se șterg",
+  "version": "2.8.7",
+  "notes": "• Progress bar la descărcarea update-ului\n• Reparat eroarea de format la pregătirea update-ului\n• Mesaj clar dacă lipsește zip-ul din GitHub Releases (404)\n• Build EXE mereu curat",
   "download_url": "https://github.com/cosminalex61/registru-casa/releases/latest/download/RegistruCasa.zip",
   "mandatory": false
 }
