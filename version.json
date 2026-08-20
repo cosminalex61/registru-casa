@@ -1,6 +1,6 @@
 {
-  "version": "2.8.7",
-  "notes": "• Progress bar la descărcarea update-ului\n• Reparat eroarea de format la pregătirea update-ului\n• Mesaj clar dacă lipsește zip-ul din GitHub Releases (404)\n• Build EXE mereu curat",
+  "version": "2.8.8",
+  "notes": "• PyMuPDF fără warning deprecated (import pymupdf)\n• Butoane mai clare: Salvează PDF, Preview/Tipărire, Modifică, Folder fișier\n• Update nu poate suprascrie baza de date sau backup-urile",
   "download_url": "https://github.com/cosminalex61/registru-casa/releases/latest/download/RegistruCasa.zip",
   "mandatory": false
 }
