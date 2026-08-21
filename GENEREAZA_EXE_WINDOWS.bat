@@ -3,8 +3,12 @@ chcp 65001 >nul
 setlocal
 cd /d "%~dp0"
 echo ============================================
-echo   RegistruCasa - BUILD (rapid / incremental)
+echo   RegistruCasa - BUILD EXE (mereu curat)
 echo ============================================
+echo.
+echo ATENTIE: sterge doar folderele build\ si dist\ din PROIECT.
+echo Nu sterge baza de date a clientului (registru_casa.db) din
+echo folderul unde ruleaza aplicatia instalata.
 echo.
 
 where python >nul 2>&1
@@ -14,30 +18,24 @@ if errorlevel 1 (
     exit /b 1
 )
 
-python -c "import PyInstaller, reportlab, tkcalendar, docx, fitz, PIL" >nul 2>&1
+python -c "import PyInstaller, reportlab, tkcalendar, docx, pymupdf, PIL" >nul 2>&1
 if errorlevel 1 (
-    echo Instalare dependinte o singura data...
+    echo Instalare dependinte...
     python -m pip install -q pyinstaller reportlab tkcalendar python-docx pymupdf pillow pywin32
 )
 
-set CLEAN_FLAG=
-if "%CLEAN%"=="1" (
-    echo Rebuild COMPLET (--clean)...
-    if exist build rmdir /s /q build
-    if exist dist rmdir /s /q dist
-    set CLEAN_FLAG=--clean
-) else (
-    echo Build INCREMENTAL (pastraza cache PyInstaller)...
-    echo Pentru rebuild complet: set CLEAN=1 ^&^& GENEREAZA_EXE_WINDOWS.bat
-)
+echo Sterg build/dist vechi (doar aici in proiect)...
+if exist build rmdir /s /q build
+if exist dist rmdir /s /q dist
 
 echo.
-pyinstaller --onedir --windowed --name "RegistruCasa" --noconfirm %CLEAN_FLAG% ^
+pyinstaller --onedir --windowed --name "RegistruCasa" --noconfirm --clean ^
   --icon "registru_casa.ico" ^
   --hidden-import=tkcalendar ^
   --hidden-import=babel.numbers ^
   --hidden-import=reportlab ^
   --hidden-import=docx ^
+  --hidden-import=pymupdf ^
   --hidden-import=fitz ^
   --hidden-import=PIL ^
   --hidden-import=win32com.client ^
@@ -56,7 +54,10 @@ pyinstaller --onedir --windowed --name "RegistruCasa" --noconfirm %CLEAN_FLAG% ^
 if exist "dist\RegistruCasa\RegistruCasa.exe" (
     echo.
     echo SUCCES: dist\RegistruCasa\RegistruCasa.exe
-    echo Pentru client: zip INTREGUL folder dist\RegistruCasa ca RegistruCasa.zip
+    echo.
+    echo Pentru client: zip INTREGUL folder dist\RegistruCasa
+    echo ca RegistruCasa.zip - FARA a include un registru_casa.db de test.
+    explorer "dist\RegistruCasa"
 ) else (
     echo [EROARE] Build esuat.
 )
