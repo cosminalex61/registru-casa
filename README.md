@@ -1,23 +1,18 @@
 # Registru de Casă
 
-Aplicație desktop (Windows) pentru registru de casă.
+Aplicație desktop (Windows) pentru registru de casă, documente borderou, export PDF/CSV.
 
-## Pentru clienți
+**Versiune stabilă: 2.8.24** (înlocuiește experimentul 3.0.0)
 
-Update automat: aplicația citește [`version.json`](version.json) la pornire și descarcă zip-ul din **Releases**.
+## Rulare dezvoltare
+```
+RULEAZA_DEV.bat
+```
 
-## Pentru dezvoltare
+## Build EXE
+```
+GENEREAZA_EXE_WINDOWS.bat
+```
 
-| Ce vrei | Comandă |
-|---------|---------|
-| Test rapid după modificare .py | `RULEAZA_DEV.bat` |
-| Build EXE pentru client | `GENEREAZA_EXE_WINDOWS.bat` |
-| Rebuild de la zero | `set CLEAN=1` + build bat |
-
-Vezi [DEVELOPMENT.md](DEVELOPMENT.md) și [SOURCE.md](SOURCE.md).
-
-## Publicare update
-
-1. Build → zip folder `dist\RegistruCasa` ca **RegistruCasa.zip**
-2. GitHub → Releases → tag `vX.Y.Z` → atașezi zip-ul
-3. Actualizezi `version.json` (version + notes)
+## Update clienți
+Vezi `version.json` + `UPDATE.md`. Release asset: `RegistruCasa.zip`.

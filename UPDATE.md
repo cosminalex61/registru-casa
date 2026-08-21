@@ -1,18 +1,12 @@
-# Cum publici un update (pentru tine)
+# Update Registru Casa
 
-1. Crește `APP_VERSION` în `registru_casa.py` și în `VERSION.txt`.
-2. Rulează `GENEREAZA_EXE_WINDOWS.bat`.
-3. Zip-uiește **întregul** folder `dist\\RegistruCasa` ca `RegistruCasa.zip`.
-4. Creează un **Release** pe GitHub: tag `vX.Y.Z`, atașează `RegistruCasa.zip`.
-5. Actualizează `version.json` (versiune + notes).
+Versiune curentă: **2.8.24** (înlocuiește 3.0.0)
 
-## Cum actualizează clientul
+1. Clienții verifică `version.json` la pornire / buton Actualizare.
+2. Descarcă `RegistruCasa.zip` din **Releases → latest**.
+3. `APPLY_UPDATE.bat` din zip păstrează baza de date și backup-urile.
 
-La deschiderea aplicației, dacă există versiune nouă:
-- apare un dialog
-- apasă **Actualizează acum**
-- aplicația descarcă zip-ul, pregătește update-ul și se închide
-- rulează automat `APPLY_UPDATE.bat` (înlocuiește fișierele, **nu șterge** baza de date)
-- repornește aplicația
-
-Nu ștergeți manual `registru_casa.db` sau `backup_registru_casa`.
+Pentru release nou:
+- Build EXE cu `GENEREAZA_EXE_WINDOWS.bat`
+- Creează Release pe GitHub cu tag `v2.8.24`
+- Atașează zip-ul ca **RegistruCasa.zip** (același nume ca în download_url)
