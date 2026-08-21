@@ -2,7 +2,13 @@
 
 Aplicație desktop (Windows) pentru registru de casă, documente borderou, export PDF/CSV.
 
-**Versiune stabilă: 2.8.24** (înlocuiește experimentul 3.0.0)
+**Versiune stabilă: 2.8.27**
+
+## Noutăți 2.8.27
+- Fix tasta Delete (nu mai cere selecție după confirmare)
+- Coloane memorate la redimensionare
+- Deschidere maximizată
+- Aliniere Încasări/Plăți/Sold sub antet
 
 ## Rulare dezvoltare
 ```
@@ -15,4 +21,4 @@ GENEREAZA_EXE_WINDOWS.bat
 ```
 
 ## Update clienți
-Vezi `version.json` + `UPDATE.md`. Release asset: `RegistruCasa.zip`.
+`version.json` + Release asset **RegistruCasa.zip**.
