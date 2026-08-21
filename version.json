@@ -1,6 +1,6 @@
 {
-  "version": "3.0.0",
-  "notes": "• UI redesign: antet minimalist, căutare, butoane prioritizate\n• Șterge activ doar la selecție; toast-uri non-intruzive\n• Tabel: sume aliniate dreapta, empty state, footer sticky",
+  "version": "2.8.24",
+  "notes": "• v2.8.24 (înlocuiește 3.0.0 experimental)\n• Logo mai mare în header + ico\n• PDF fără temp; flow documente clar\n• Parteneri, căutare, scurtături, foldere export",
   "download_url": "https://github.com/cosminalex61/registru-casa/releases/latest/download/RegistruCasa.zip",
   "mandatory": false
 }
