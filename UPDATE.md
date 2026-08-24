@@ -1,9 +1,7 @@
-# Update Registru Casa
+# Update
 
-Versiune curentă: **2.8.27**
+Versiune: **2.9.0**
 
-1. Clienții verifică `version.json` la pornire / buton Actualizare.
-2. Descarcă `RegistruCasa.zip` din **Releases → latest**.
-3. `APPLY_UPDATE.bat` din zip păstrează baza de date și backup-urile.
-
-Build local: `GENEREAZA_EXE_WINDOWS.bat` → zip `dist\RegistruCasa` ca **RegistruCasa.zip** → upload pe Release.
+1. `version.json` pe main anunță versiunea.
+2. Release asset: **RegistruCasa.zip** (folderul dist).
+3. La update, baza de date locală nu se șterge.
