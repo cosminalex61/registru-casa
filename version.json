@@ -1,6 +1,6 @@
 {
-  "version": "2.8.27",
-  "notes": "• v2.8.27\n• Fix Delete (fără eroare după confirmare)\n• Coloane memorate + fereastră maximizată\n• Aliniere coloane la resize\n• Logo header + PDF fără temp + parteneri",
+  "version": "2.9.0",
+  "notes": "• v2.9.0\n• Login + drepturi utilizatori\n• Documente an/tip/perioadă + nr.crt pe tip\n• Backup folder sincronizat\n• Iconițe noi; preset perioadă; căutare dreapta",
   "download_url": "https://github.com/cosminalex61/registru-casa/releases/latest/download/RegistruCasa.zip",
   "mandatory": false
 }
