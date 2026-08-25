@@ -1,64 +1,37 @@
 # Registru de Casă
 
-Aplicație desktop pentru evidența operațiunilor de casă (încasări / plăți), generare documente justificative și export PDF conform cerințelor uzuale din contabilitatea românească.
+Aplicație desktop pentru evidența operațiunilor de casă, generarea documentelor justificative și gestionarea exporturilor PDF.
 
-Proiect personal de software, dezvoltat incremental, cu accent pe stabilitatea datelor, fluxuri clare pentru utilizatorul final și posibilitatea de actualizare fără pierderea bazei existente.
+## Funcții principale
 
-## Ce face
+- **Registru de casă**: înregistrări zilnice, sold rulant, filtre rapide, căutare și preview
+- **Documente**: borderouri bancă, cash și depuneri; PDF principal și Word regenerat la cerere
+- **Arhivă PDF**: numerotare incrementală, perioadă, preview, locație și ștergere
+- **Siguranța datelor**: backup local, backup înaintea migrării, rollback și backup cloud la interval configurabil
+- **Utilizatori**: autentificare, roluri, drepturi și audit
+- **Email**: selectarea documentelor, preview și creare de draft Gmail cu atașamente
+- **Semnare**: deschiderea PDF-ului final în aplicația implicită și salvarea peste același fișier
 
-- **Registru de casă**: înregistrări pe zile, sold rulant, filtrare pe perioadă, căutare
-- **Documente**: borderouri bancă / cash / depuneri, pe baza de șabloane Word; stocare pe `an / tip / perioadă`
-- **Export**: PDF registru (inclusiv o zi pe pagină), CSV, tipărire cu preview
-- **Siguranță date**: backup local automat, rollback, backup opțional într-un folder sincronizat (ex. Google Drive / Digi Storage)
-- **Utilizatori**: autentificare, rol admin / user, drepturi pe operații sensibile
+## Tehnologii
 
-## Stack
+- Python 3 și Tkinter / ttk
+- SQLite în mod WAL
+- ReportLab, python-docx, PyMuPDF și Pillow
+- PyInstaller, distribuție Windows one-dir
+- Gmail API cu OAuth Desktop pentru crearea drafturilor
 
-- Python 3, Tkinter / ttk
-- SQLite (WAL)
-- reportlab, python-docx, PyMuPDF, Pillow
-- Packaging: PyInstaller (one-dir)
+## Actualizare și protecția datelor
 
-## Structura proiectului
+Aplicația verifică `version.json` și descarcă pachetul publicat în GitHub Releases. La actualizare sunt păstrate baza clientului, backupurile, documentele și exporturile locale. Bazele vechi sunt copiate înaintea migrării și apoi aduse automat la structura curentă.
 
-```
-registru_casa.py          # aplicația
-documente_templates/      # machete Word
-fonts/                    # DejaVu (diacritice în PDF)
-RULEAZA_DEV.bat           # rulare fără rebuild
-GENEREAZA_EXE_WINDOWS.bat # build EXE
-CREAZA_SCURTATURA_DOCUMENTE.bat  # scurtătură Desktop → folder documente
-version.json              # (pe GitHub) canal de update pentru clienți
-```
+Bazele SQLite, backupurile, documentele generate și credențialele OAuth nu sunt incluse în repository sau în pachetul standard de actualizare.
 
-## Rulare în dezvoltare
+## Cod sursă
 
-```bat
-RULEAZA_DEV.bat
-```
-
-Dependențe (dacă lipsesc): `reportlab`, `tkcalendar`, `python-docx`, `pymupdf`, `pillow`, `pywin32`.
-
-## Build Windows
-
-```bat
-GENEREAZA_EXE_WINDOWS.bat
-```
-
-Rezultat: `dist\RegistruCasa\`. Pentru distribuție, arhivezi folderul ca `RegistruCasa.zip` (fără o bază de test înăuntru).
-
-## Cont implicit
-
-La prima rulare se creează utilizatorul **admin** / **admin**. Schimbați parola din administrarea utilizatorilor.
-
-## Decizii de design (pe scurt)
-
-- Baza de date rămâne lângă EXE; update-ul nu o suprascrie.
-- Documentele păstrează în SQLite datele de formular, astfel încât un Word/PDF pierdut poate fi regenerat.
-- Backup-ul „cloud” e intenționat pe **folder sincronizat** de client — fără OAuth în aplicație, ca să rămână simplu de instalat pe mai multe posturi.
+Codul sursă este proprietar și nu este publicat în acest repository. Repository-ul este folosit pentru documentație, metadatele de versiune și distribuirea pachetelor Windows. Detalii: [SOURCE.md](SOURCE.md).
 
 ## Licență / uz
 
-Proiect educațional / portofoliu. Nu înlocuiește consultanță contabilă; adaptați fluxurile la procedura firmei.
+Aplicație cu utilizare privată. Nu înlocuiește consultanța contabilă; fluxurile trebuie adaptate procedurilor firmei.
 
-Versiune curentă: **2.9.0**
+Versiune curentă: **2.15.5**
