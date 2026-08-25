@@ -1,6 +1,6 @@
 # Registru de Casă
 
-Aplicație desktop Windows pentru evidența operațiunilor de casă, documente justificative și export PDF, dezvoltată ca proiect personal de software (portofoliu / admitere).
+Aplicație desktop Windows pentru evidența operațiunilor de casă, documente justificative și export PDF, dezvoltată ca proiect personal de software.
 
 ![Interfața Registru de Casă](docs/registru-casa-v2.15.5.png)
 
@@ -33,13 +33,12 @@ Aplicație desktop Windows pentru evidența operațiunilor de casă, documente j
 - Logica de business și UI într-o aplicație desktop monolitică, ușor de instalat pe posturi de lucru.
 - Datele rămân **lângă aplicație** (sau în foldere configurate); update-ul copiază binarele, nu baza.
 - Documentele păstrează în SQLite câmpurile de formular, ca un PDF/Word pierdut să poată fi regenerat.
-- Dependențele de calendar (tkcalendar / babel / **pytz**) sunt incluse explicit în build, ca EXE-ul să pornească predictibil pe Windows.
 
 ## Repository
 
 Acest repo public conține **documentație**, **metadate de versiune** și canalul de **release** — nu codul sursă complet al aplicației.
 
-Nu sunt publicate: baze SQLite, backup-uri, documente generate, token-uri OAuth, fișiere din `.gitignore`.
+Nu sunt publicate: baze SQLite, backup-uri, documente generate, token-uri OAuth.
 
 ## Licență / uz
 
