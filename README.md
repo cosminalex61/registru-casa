@@ -20,7 +20,7 @@ Centralizarea înregistrărilor de casă, a documentelor generate și a arhivelo
 | Interfață | Tkinter / ttk |
 | Bază de date | SQLite (mod WAL, pragmas de siguranță la scriere) |
 | PDF | ReportLab (generare), PyMuPDF / fitz (vizualizare, manipulare) |
-| Documente Office | python-docx |
+| Documente Office | python-docx (șabloane Word → completare → PDF) |
 | Calendar UI | tkcalendar, babel, pytz |
 | Imagini / iconițe | Pillow |
 | Email | Gmail API, google-auth-oauthlib, google-api-python-client (OAuth Desktop) |
@@ -48,9 +48,15 @@ Acces pe bază de cont, cu roluri și drepturi pe operații sensibile (ștergere
   <img src="docs/user-drepturi.png" alt="Utilizatori și drepturi" width="420" />
 </p>
 
-### 3. Preview, tipărire și documente
+### 3. Documente pe șabloane
 
-Preview-ul folosește același conținut ca documentul tipărit. Borderourile și exporturile sunt generate din aplicație; datele de formular sunt păstrate în baza de date pentru regenerare. Arhiva PDF include numerotare, perioadă în denumire și management din interfață. Path-urile de documente pot fi expuse prin scurtătură pe Desktop, fără a lăsa fișierele neorganizate.
+Modulul de documente (borderouri bancă / cash / depuneri etc.) pornește de la **șabloane** Word predefinite. Utilizatorul completează câmpurile în interfața aplicației (date, sume, parteneri, text justificativ, rânduri de tabel etc.); aplicația mapează valorile pe template, generează documentul și produce un **PDF cu toate câmpurile completate**, pregătit pentru semnare și arhivare.
+
+**Persistența valorilor:** conținutul formularului este salvat în baza de date SQLite (nu doar pe disc ca fișier). Dacă PDF-ul sau Word-ul dispar de pe disk, documentul poate fi **regenerat** din datele păstrate, fără reintroducere manuală a întregului conținut. Această alegere leagă modulul de documente de strategia generală de backup: fișierul e un artefact; sursa de adevăr pentru regenerare rămâne în bază.
+
+### 4. Preview, tipărire și arhivă PDF
+
+Preview-ul registrului folosește același conținut ca documentul tipărit. Arhiva PDF include numerotare, perioadă în denumire și management din interfață. Path-urile de documente pot fi expuse prin scurtătură pe Desktop, fără a lăsa fișierele neorganizate.
 
 La conflict de nume (fișier deja existent), utilizatorul alege explicit dacă suprascrie sau anulează — evitând pierderi accidentale.
 
@@ -60,7 +66,7 @@ La conflict de nume (fișier deja existent), utilizatorul alege explicit dacă s
   <img src="docs/pdf-conflict.png" alt="Conflict PDF existent" width="360" />
 </p>
 
-### 4. Protecția datelor
+### 5. Protecția datelor
 
 - Backup la modificări relevante (operațiuni, setări, documente)
 - Backup zilnic la pornirea aplicației
@@ -74,7 +80,7 @@ La conflict de nume (fișier deja existent), utilizatorul alege explicit dacă s
   <img src="docs/backup-rollback.png" alt="Backup și rollback" width="440" />
 </p>
 
-### 5. Email (Gmail)
+### 6. Email (Gmail)
 
 Integrare prin **OAuth Desktop** (fără parolă Google în aplicație). Din modul se creează automat un **draft** în Gmail, cu PDF-urile selectate atașate. Utilizatorul completează destinatarul și restul mesajului, apoi trimite din Gmail. Nu există trimitere automată neconfirmată.
 
@@ -82,7 +88,7 @@ Integrare prin **OAuth Desktop** (fără parolă Google în aplicație). Din mod
   <img src="docs/draft_email.png" alt="Draft email Gmail" width="460" />
 </p>
 
-### 6. Interfață — temă întunecată (în lucru)
+### 7. Interfață — temă întunecată (în lucru)
 
 Suport pentru temă dark, în curs de rafinare (contrast, controale de dată, lizibilitate).
 
@@ -95,6 +101,8 @@ Suport pentru temă dark, în curs de rafinare (contrast, controale de dată, li
 | Decizie | Motiv |
 |---------|--------|
 | SQLite local + WAL | Instalare simplă pe post de lucru, fără server obligatoriu; scrieri mai sigure la întreruperi |
+| Șabloane Word + completare în UI → PDF | Document standardizat, gata de semnat, fără formatare manuală repetată |
+| Câmpuri document în DB | Regenerare dacă fișierul dispare; aliniat cu backup-ul bazei |
 | Backup pe evenimente + cloud pe folder sync | Protecție fără a introduce OAuth/parole de storage în app |
 | Preview = PDF de tipărire | Același rezultat pe ecran și pe hârtie |
 | Conflict PDF explicit | Control la suprascriere |
