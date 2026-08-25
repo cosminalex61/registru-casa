@@ -16,4 +16,3 @@ Nu se publică:
 - fișiere OAuth, tokenuri sau alte credențiale;
 - date aparținând utilizatorilor ori clienților.
 
-Pachetul Windows poate fi analizat tehnic, ca orice aplicație distribuită, însă publicarea lui nu echivalează cu publicarea directă a codului sursă.
