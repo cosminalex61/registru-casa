@@ -1,41 +1,19 @@
-# Cod sursă & fișiere binare
+# Cod sursă și distribuție
 
-## De ce nu e totul în git (încă)
+Codul sursă al aplicației Registru de Casă este proprietar și nu este publicat în acest repository.
 
-- `registru_casa.py` (~150 KB) + fonturi TTF + template-uri DOCX se livrează în **Release zip** (`RegistruCasa.zip`), ca să poată fi descărcate de update-ul automat.
-- Connectorul de push din asistent e optimizat pentru fișiere text; arhiva completă de client rămâne pe **Releases**.
+Repository-ul public este utilizat exclusiv pentru:
 
-## Cum pui totul pe GitHub de pe PC-ul tău (recomandat)
+- documentația generală a aplicației;
+- fișierul `version.json` folosit la verificarea actualizărilor;
+- pachetele Windows publicate în secțiunea Releases.
 
-```bat
-git clone https://github.com/cosminalex61/registru-casa.git
-cd registru-casa
-```
+Nu se publică:
 
-Copiază din folderul tău de proiect:
-- registru_casa.py
-- fonts\
-- documente_templates\
-- registru_casa.ico / .png
+- `registru_casa.py` sau șabloanele interne de dezvoltare;
+- baze de date SQLite;
+- backupuri și documente generate;
+- fișiere OAuth, tokenuri sau alte credențiale;
+- date aparținând utilizatorilor ori clienților.
 
-Apoi:
-
-```bat
-git add -A
-git commit -m "Sync v2.8.5 sursa completa"
-git push
-```
-
-## Dezvoltare zilnică (FĂRĂ rebuild EXE)
-
-```bat
-RULEAZA_DEV.bat
-```
-
-## Build client (doar la release)
-
-```bat
-GENEREAZA_EXE_WINDOWS.bat
-```
-
-Incremental = rapid. Rebuild total: `set CLEAN=1` apoi același bat.
+Pachetul Windows poate fi analizat tehnic, ca orice aplicație distribuită, însă publicarea lui nu echivalează cu publicarea directă a codului sursă.
