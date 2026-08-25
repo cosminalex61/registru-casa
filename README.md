@@ -1,41 +1,48 @@
 # Registru de Casă
 
-Aplicație desktop pentru evidența operațiunilor de casă, generarea documentelor justificative și gestionarea exporturilor PDF.
+Aplicație desktop Windows pentru evidența operațiunilor de casă, documente justificative și export PDF, dezvoltată ca proiect personal de software (portofoliu / admitere).
 
-## Captură de ecran
+![Interfața Registru de Casă](docs/registru-casa-v2.15.5.png)
 
-![Interfața Registru de Casă v2.15.5](docs/registru-casa-v2.15.5.png)
+## Problema pe care o rezolvă
 
-## Funcții principale
+În practică, registrul de casă și borderourile se țin adesea în Excel sau pe hârtie. Aplicația centralizează înregistrările, calculează soldul, generează documentele uzuale și păstrează un istoric care poate fi regăsit și regenerat, fără să piardă datele la actualizare.
 
-- **Registru de casă**: înregistrări zilnice, sold rulant, filtre rapide, căutare și preview
-- **Documente**: borderouri bancă, cash și depuneri; PDF principal și Word regenerat la cerere
-- **Arhivă PDF**: numerotare incrementală, perioadă, preview, locație și ștergere
-- **Siguranța datelor**: backup local, backup înaintea migrării, rollback și backup cloud la interval configurabil
-- **Utilizatori**: autentificare, roluri, drepturi și audit
-- **Email**: selectarea documentelor, preview și creare de draft Gmail cu atașamente
-- **Semnare**: deschiderea PDF-ului final în aplicația implicită și salvarea peste același fișier
+## Funcționalități
+
+- **Registru**: încasări / plăți pe zile, sold rulant, filtre pe perioadă, căutare
+- **Documente**: borderouri bancă, cash, depuneri; PDF ca rezultat principal
+- **Arhivă PDF**: numerotare, perioadă în nume, preview
+- **Date**: SQLite (WAL), backup local, rollback, backup opțional pe folder sincronizat (Drive / Digi etc.)
+- **Utilizatori**: autentificare, roluri, drepturi pe operații sensibile
+- **Email**: draft Gmail cu atașamente (opțional)
+- **Update**: canal `version.json` + GitHub Releases, fără a suprascrie baza clientului
 
 ## Tehnologii
 
-- Python 3 și Tkinter / ttk
-- SQLite în mod WAL
-- ReportLab, python-docx, PyMuPDF și Pillow
-- PyInstaller, distribuție Windows one-dir
-- Gmail API cu OAuth Desktop pentru crearea drafturilor
+| Zonă | Alegere |
+|------|---------|
+| UI | Python 3, Tkinter / ttk |
+| Persistare | SQLite (mod WAL) |
+| PDF / Office | ReportLab, python-docx, PyMuPDF |
+| Distribuție | PyInstaller (one-dir, Windows) |
+| Integrări | Gmail API (OAuth Desktop, draft) |
 
-## Actualizare și protecția datelor
+## Arhitectură (pe scurt)
 
-Aplicația verifică `version.json` și descarcă pachetul publicat în GitHub Releases. La actualizare sunt păstrate baza clientului, backupurile, documentele și exporturile locale. Bazele vechi sunt copiate înaintea migrării și apoi aduse automat la structura curentă.
+- Logica de business și UI într-o aplicație desktop monolitică, ușor de instalat pe posturi de lucru.
+- Datele rămân **lângă aplicație** (sau în foldere configurate); update-ul copiază binarele, nu baza.
+- Documentele păstrează în SQLite câmpurile de formular, ca un PDF/Word pierdut să poată fi regenerat.
+- Dependențele de calendar (tkcalendar / babel / **pytz**) sunt incluse explicit în build, ca EXE-ul să pornească predictibil pe Windows.
 
-Bazele SQLite, backupurile, documentele generate și credențialele OAuth nu sunt incluse în repository sau în pachetul standard de actualizare.
+## Repository
 
-## Cod sursă
+Acest repo public conține **documentație**, **metadate de versiune** și canalul de **release** — nu codul sursă complet al aplicației.
 
-Codul sursă este proprietar și nu este publicat în acest repository. Repository-ul este folosit pentru documentație, metadatele de versiune și distribuirea pachetelor Windows. Detalii: [SOURCE.md](SOURCE.md).
+Nu sunt publicate: baze SQLite, backup-uri, documente generate, token-uri OAuth, fișiere din `.gitignore`.
 
 ## Licență / uz
 
-Aplicație cu utilizare privată. Nu înlocuiește consultanța contabilă; fluxurile trebuie adaptate procedurilor firmei.
+Proiect educațional și de portofoliu. Nu înlocuiește consultanța contabilă; fluxurile trebuie adaptate procedurii firmei.
 
-Versiune curentă: **2.15.5**
+**Versiune curentă: 2.15.6**
