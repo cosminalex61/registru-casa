@@ -2,6 +2,10 @@
 
 Aplicație desktop pentru evidența operațiunilor de casă, generarea documentelor justificative și gestionarea exporturilor PDF.
 
+## Captură de ecran
+
+![Interfața Registru de Casă v2.15.5](docs/registru-casa-v2.15.5.png)
+
 ## Funcții principale
 
 - **Registru de casă**: înregistrări zilnice, sold rulant, filtre rapide, căutare și preview
