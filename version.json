@@ -1,6 +1,6 @@
 {
-  "version": "2.15.5",
-  "notes": "Dialoguri modale restaurate corect după minimizare; exportul automat orfan al Registrului săptămânal a fost eliminat; preview PDF disponibil în Draft email și Arhiva PDF; fluxul Gmail și denumirile acțiunilor au fost clarificate.",
-  "download_url": "https://github.com/cosminalex61/registru-casa/releases/download/V2.15.5/RegistruCasa.zip",
+  "version": "2.15.6",
+  "notes": "• Fix pornire EXE: pytz/babel incluse corect în build (UnknownTimeZoneError)\n• Calendar obligatoriu (tkcalendar)\n• Patch pytz.UnknownTimeZoneError pentru bundle Windows",
+  "download_url": "https://github.com/cosminalex61/registru-casa/releases/download/V2.15.6/RegistruCasa.zip",
   "mandatory": false
 }
