@@ -1,6 +1,6 @@
 {
-  "version": "2.12.0",
-  "notes": "• Rezolvare bug-uri \n• Modificari vizuale si de logica",
-  "download_url": "https://github.com/cosminalex61/registru-casa/releases/latest/download/RegistruCasa.zip",
+  "version": "2.15.5",
+  "notes": "Dialoguri modale restaurate corect după minimizare; exportul automat orfan al Registrului săptămânal a fost eliminat; preview PDF disponibil în Draft email și Arhiva PDF; fluxul Gmail și denumirile acțiunilor au fost clarificate.",
+  "download_url": "https://github.com/cosminalex61/registru-casa/releases/download/v2.15.5/RegistruCasa.zip",
   "mandatory": false
 }
