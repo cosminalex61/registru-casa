@@ -2,7 +2,17 @@
 
 Aplicație desktop Windows pentru evidența operațiunilor de casă, documente justificative și export PDF, dezvoltată ca proiect personal de software.
 
-![Interfața Registru de Casă](docs/registru-casa-v2.15.5.png)
+## Capturi de ecran
+
+<p align="center">
+  <img src="docs/registru-casa-v2.15.5.png" alt="Interfața principală" width="520" />
+</p>
+
+<p align="center">
+  <img src="docs/preview-tiparire.png" alt="Preview tipărire" width="460" />
+  &nbsp;
+  <img src="docs/backup-rollback.png" alt="Backup și rollback" width="340" />
+</p>
 
 ## Problema pe care o rezolvă
 
