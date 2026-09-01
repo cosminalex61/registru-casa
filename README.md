@@ -2,7 +2,7 @@
 
 Aplicație desktop Windows pentru evidența operațiunilor de casă, generarea documentelor justificative și organizarea PDF-urilor. Este un proiect personal construit incremental, de la un registru local la o arhitectură modulară cu backup, actualizare sigură și flux de documente.
 
-**Release public curent: v3.0.0 — migrare PySide6 / Qt.** Release-ul rămâne punctul clar de revenire; modificările noi sunt validate înainte de un release ulterior.
+**Release public curent: v3.0 — refacere PySide6 / Qt.** Pachetul Windows este separat de datele locale; baza, documentele și configurările utilizatorului rămân protejate la actualizare.
 
 <p align="center">
   <img src="docs/main-page-V2.15.6.png" alt="Interfața principală a aplicației Registru de Casă" width="720" />
@@ -43,6 +43,17 @@ UI-ul poate evolua fără rescrierea bazei, iar logica de documente/PDF poate fi
 | Email | Gmail API + OAuth Desktop | draft cu atașamente, fără parole Google în aplicație |
 | Distribuție | PyInstaller | pachet Windows fără Python instalat |
 | Actualizare | GitHub Releases + manifest | update fără înlocuirea datelor locale |
+
+## Noutăți v3.0
+
+- interfață refăcută în **PySide6 / Qt**: pagini în aceeași fereastră pentru Registru, Situație, Documente, Rapoarte și Arhivă;
+- controale scalabile pentru Windows, tabele cu coloane redimensionabile și preferințe UI păstrate între porniri;
+- light mode și dark mode, cu iconițe coerente, calendare native Qt și dialoguri modernizate;
+- dashboard util pentru perioada aleasă: flux de numerar, mișcări mari, documente/exporturi și bilanț anual;
+- arhivă unificată pentru exporturile Registrului și documentele generate, cu preview, deschidere, localizare, semnare externă, ștergere controlată și pregătire pentru draft Gmail;
+- logică separată de UI în modulele core, data, services și ui, astfel încât funcționalitățile vechi să poată fi migrate și îmbunătățite gradual.
+
+Următorul hotfix, **v3.0.1**, adaugă backup SQLite obligatoriu înainte de orice actualizare. Va fi publicat numai împreună cu arhiva Windows corespunzătoare.
 
 ## Fluxuri importante
 
