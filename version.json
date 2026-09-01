@@ -1,5 +1,5 @@
 {
-  "version": "3.0.5",
+  "version": "v3.0.5",
   "notes": "• Interfață modernă pe PyQt/Qt (PySide6): pagini, temă, arhivă și flux de lucru redesenate față de varianta Tkinter\n• Update: după descărcare extragerea rulează în fundal; nu mai rămâne blocat la 100%\n• Înainte de instalare se face obligatoriu un backup SQLite consistent (WAL inclus); dacă backup-ul eșuează, update-ul se anulează\n• Baza de date, backup-urile și OAuth-ul nu sunt suprascrise de pachet\n• Checkbox și radio vizibile pe orice PC, independent de folderul din care pornește aplicația",
   "download_url": "https://github.com/cosminalex61/registru-casa/releases/download/v3.0.5/RegistruCasa.zip",
   "mandatory": false
