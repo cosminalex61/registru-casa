@@ -1,6 +1,6 @@
 {
-  "version": "3.0.1",
-  "notes": "• Hotfix update: de la această versiune, fiecare actualizare viitoare creează obligatoriu un backup SQLite consistent înainte de instalare\n• Login: ultimul utilizator autentificat este selectat automat; parola nu se salvează\n• Iconiță aplicație modernizată, cu colțuri rotunjite, inclusă atât în EXE cât și în resurse\n• Păstrate îmbunătățirile Qt 3.0: interfață pe pagini, arhivă unificată, dashboard și temă light/dark",
-  "download_url": "https://github.com/cosminalex61/registru-casa/releases/download/v3.0.1/RegistruCasa.zip",
+  "version": "3.0.3",
+  "notes": "• Interfață modernă pe PyQt/Qt (PySide6): pagini, temă, arhivă și flux de lucru redesenate față de varianta Tkinter\n• Update: după descărcare extragerea rulează în fundal; nu mai rămâne blocat la 100%\n• Înainte de instalare se face obligatoriu un backup SQLite consistent (WAL inclus); dacă backup-ul eșuează, update-ul se anulează\n• Baza de date, backup-urile și OAuth-ul nu sunt suprascrise de pachet\n• Checkbox și radio vizibile pe orice PC, independent de folderul din care pornește aplicația",
+  "download_url": "https://github.com/cosminalex61/registru-casa/releases/download/v3.0.3/RegistruCasa.zip",
   "mandatory": false
 }
