@@ -1,6 +1,6 @@
 {
-  "version": "2.15.6",
-  "notes": "• Fix pornire EXE: pytz/babel incluse corect în build (UnknownTimeZoneError)\n• Calendar obligatoriu (tkcalendar)\n• Patch pytz.UnknownTimeZoneError pentru bundle Windows",
-  "download_url": "https://github.com/cosminalex61/registru-casa/releases/download/V2.15.6/RegistruCasa.zip",
+  "version": "3.0.0",
+  "notes": "• Noua interfață Qt / PySide6, cu structură modernizată pe module\n• Registru, documente, arhivă PDF și draft e-mail într-un flux unificat\n• Temă deschisă/întunecată și preferințe de interfață păstrate local\n• Actualizarea păstrează baza de date, backupurile și setările locale",
+  "download_url": "https://github.com/cosminalex61/registru-casa/releases/download/v3.0/RegistruCasa.zip",
   "mandatory": false
 }
