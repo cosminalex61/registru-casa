@@ -5,7 +5,7 @@ Aplicație desktop Windows pentru evidența operațiunilor de casă, generarea d
 **Interfața curentă este PySide6 / Qt.** Pachetul Windows este separat de datele locale; baza, documentele și configurările rămân protejate la actualizare.
 
 <p align="center">
-  <img src="docs/main.png" alt="Registru de Casă — interfața principală" width="920" />
+  <img src="main.png" alt="Registru de Casă — interfața principală" width="920" />
 </p>
 
 ## Ce rezolvă aplicația
