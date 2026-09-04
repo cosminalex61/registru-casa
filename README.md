@@ -50,6 +50,11 @@ tests/       verificări pentru fluxurile critice
 4. Fișierul ajunge în arhivă: preview, semnare externă sau draft Gmail.
 5. Update-ul exclude baza `.db`, WAL/SHM, backup-urile, documentele și OAuth-ul.
 
+   <p align="center">
+  <img src="arhiva.png" alt="Registru de Casă — interfața principală" width="920" />
+</p>
+
+
 ## Confidențialitate
 
 Repository-ul public prezintă arhitectura, deciziile de proiectare, o captură și release-uri Windows. Nu include baza de date, backup-uri, documente generate, token-uri OAuth sau sursa completă a produsului.
