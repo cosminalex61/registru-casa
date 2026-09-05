@@ -1,6 +1,6 @@
 {
-  "version": "3.0.12",
-  "notes": "• Interfață modernă pe PyQt/Qt (PySide6): pagini, temă, arhivă și flux de lucru redesenate față de varianta Tkinter\n• Update: după descărcare extragerea rulează în fundal; nu mai rămâne blocat la 100%\n• Înainte de instalare se face obligatoriu un backup SQLite consistent (WAL inclus); dacă backup-ul eșuează, update-ul se anulează\n• Baza de date, backup-urile și OAuth-ul nu sunt suprascrise de pachet\n• Checkbox și radio vizibile pe orice PC, independent de folderul din care pornește aplicația",
-  "download_url": "https://github.com/cosminalex61/registru-casa/releases/download/v3.0.12/RegistruCasa.zip",
+  "version": "3.0.13",
+"notes": "• Rapoarte: preseturi de perioadă (luna/ziua curentă, luna trecută, an curent, toată perioada), raport nou „Plăți pe perioadă” cu export PDF arhivat în Arhivă → Rapoarte\n• Arhivă: filtrare pe perioadă, sursă nouă Rapoarte, etichete deasupra câmpurilor și bare care se reașază pe ecrane înguste\n• Documente: antet pe un singur rând la depuneri, coloană Nr. crt. și în editare, lățimi memorate independent pe tip, editare cu câmpuri integrate, calendare și listă de parteneri\n• Interfață: zoomul din Aspect scalează tot (fonturi, tabele, câmpuri), butoane egale pe rând, texte vizibile indiferent de tema Windows\n• Calendar lizibil: grid, zile din afara lunii stinse, weekend roșu consecvent și formatare actualizată la schimbarea temei\n• Iconiță nouă Semnează (document cu stilou); iconițele Preview/Export se actualizează la schimbarea temei",
+  "download_url": "https://github.com/cosminalex61/registru-casa/releases/download/v3.0.13/RegistruCasa.zip",
   "mandatory": false
 }
