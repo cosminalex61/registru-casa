@@ -1,6 +1,6 @@
 {
-  "version": "3.0.14",
-"notes": "• Rapoarte: preseturi de perioadă, raport nou „Plăți pe perioadă” și „Încasări pe perioadă” cu export PDF arhivat în Arhivă → Rapoarte\n• Arhivă: filtrare pe perioadă, sursă nouă Rapoarte, bare care se reașază pe ecrane înguste, click în afara tabelului golește selecția\n• Documente: antet pe un singur rând la depuneri, coloană Nr. crt. și în editare, lățimi memorate independent pe tip, calendare și listă de parteneri cu căutare CUI\n• Facturi furnizori: evidență cu status derivat din sume, serie/nr, termen↔scadență, plăți cash/card/mixt, totaluri colorate, sortare și căutare\n• Semnături: „Vezi PDF” arată live starea semnat/nesemnat; Editarea/Re-exportul unui PDF semnat cere confirmare (rescrierea șterge semnătura)\n• Interfață: zoomul din Aspect scalează tot, butoane egale pe rând, texte vizibile indiferent de tema Windows, calendar lizibil cu grid și weekend roșu",
-  "download_url": "https://github.com/cosminalex61/registru-casa/releases/download/v3.0.14/RegistruCasa.zip",
+  "version": "3.0.17",
+"notes": "• Facturi furnizori: istoric plăți cu dată, modalitate (cash/card/virament) și sumă la dublu-click; rest vizibil + previzualizare live la fiecare tastă\n• Sold creditor: plata în plus rămâne pe factură (coloană „Sold creditor”); compensare la factura nouă; filtru și dialog „Furnizori debitori”; reglaj manual +/− cu motiv, ștergere sold și istoric reglări\n• Plăți cash: întrebare scurtă pentru trecerea în Registrul de casă; cardul și viramentul rămân doar în istoric\n• Interfață Facturi: deschidere maximizată, un singur flux (doar „Marchează achitat integral” la factură nouă), coloane mutabile cu ordine și lățimi salvate, dialoguri cu ultima mărime păstrată",
+  "download_url": "https://github.com/cosminalex61/registru-casa/releases/download/v3.0.17/RegistruCasa.zip",
   "mandatory": false
 }
