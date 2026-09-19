@@ -1,6 +1,6 @@
 {
-  "version": "3.0.18",
-  "notes": "La „Marchează achitat integral” se alege și data plății (implicit azi), nu mai merge automat pe data facturii.\nPlata inițială și operația cash din Registrul de casă folosesc data plății aleasă.",
-  "download_url": "https://github.com/cosminalex61/registru-casa/releases/download/v3.0.18/RegistruCasa.zip",
+  "version": "3.0.19",
+  "notes": "Adaugare nr. chitanta la inregistrare plata factura",
+  "download_url": "https://github.com/cosminalex61/registru-casa/releases/download/v3.0.19/RegistruCasa.zip",
   "mandatory": false
 }
