@@ -1,6 +1,6 @@
 {
-  "version": "3.0.19",
-  "notes": "Adaugare nr. chitanta la inregistrare plata factura",
-  "download_url": "https://github.com/cosminalex61/registru-casa/releases/download/v3.0.19/RegistruCasa.zip",
+  "version": "3.0.20",
+  "notes": "Refresh automat token OAuth Google la expirare.",
+  "download_url": "https://github.com/cosminalex61/registru-casa/releases/download/v3.0.20/RegistruCasa.zip",
   "mandatory": false
 }
