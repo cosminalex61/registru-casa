@@ -1,6 +1,6 @@
 {
-  "version": "3.0.24",
-  "notes": "Fix Preview Registru Flowable too large.",
-  "download_url": "https://github.com/cosminalex61/registru-casa/releases/download/v3.0.24/RegistruCasa.zip",
-  "mandatory": false
+    "download_url":  "https://github.com/cosminalex61/registru-casa/releases/download/v3.0.25/RegistruCasa.zip",
+    "mandatory":  false,
+    "version":  "3.0.25",
+    "notes":  "Situatie insolventa + export PDF + fix subsol BT."
 }
