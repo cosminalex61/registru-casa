@@ -1,6 +1,6 @@
 {
-    "download_url":  "https://github.com/cosminalex61/registru-casa/releases/download/v3.0.25/RegistruCasa.zip",
+    "download_url":  "https://github.com/cosminalex61/registru-casa/releases/download/v3.0.26/RegistruCasa.zip",
     "mandatory":  false,
-    "version":  "3.0.25",
-    "notes":  "Situatie insolventa + export PDF + fix subsol BT."
+    "version":  "3.0.26",
+    "notes":  "Borderou BUGETUL DE STAT + latimi coloane pastrate."
 }
