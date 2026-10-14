@@ -1,6 +1,7 @@
 {
-    "download_url":  "https://github.com/cosminalex61/registru-casa/releases/download/v3.0.27/RegistruCasa.zip",
-    "mandatory":  false,
-    "version":  "3.0.27",
-    "notes":  "Fix editare factura."
+  "version": "4.0.1",
+  "download_url": "https://github.com/cosminalex61/registru-casa/releases/download/v4.0.1/RegistruCasa.zip",
+  "mandatory": false,
+  "notes": "Centralizator: perioadă și tipuri la vedere, selecție multiplă și extras unic structurat\nExport A4 peisaj centrat, surse concise, antete repetate și subtotaluri\nDate de verificat: detalii și deschiderea facturii, documentului sau tranzacției sursă\nColoane redimensionabile în Documente, calendare accesibile și instrumente Registru în dreapta\nPreluare explicații din Registru, surse deja în formular marcate și bifare / debifare în bloc",
+  "sha256": "bf912d1203af3b97215ffe630e429bbe475e8716a5ac14a72e8dde80ff76ed48"
 }
