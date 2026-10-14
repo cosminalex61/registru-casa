@@ -1,7 +1,7 @@
 {
-  "version": "4.0.2",
-  "download_url": "https://github.com/cosminalex61/registru-casa/releases/download/v4.0.2/RegistruCasa.zip",
+  "version": "4.0.3",
+  "download_url": "https://github.com/cosminalex61/registru-casa/releases/download/v4.0.3/RegistruCasa.zip",
   "mandatory": false,
-  "notes": "Documente: preluare din extras numai a plăților identificate ale societății\nFiltre distincte pentru card și viramente; decontările POS, comisioanele și transferurile interne se verifică separat\nPlățile cu cardul înregistrate la facturi pot fi preluate în borderourile bancare",
-  "sha256": "7441a41964cd813a1e2dc232b0d8cdafc3a05c6b63b7332a27b44e3b3c1f399e"
+  "notes": "Panourile de opțiuni își calculează înălțimea completă, fără ultimul rând tăiat\nFacturi: clicul pe antet sortează coloana; iconița de filtru rămâne separată\nContracte: picker și listă personalizabilă de modalități de plată, fără rescrierea contractelor vechi",
+  "sha256": "3b14ddfa110465400d7f0324be7195475f46981f79f77fc33d1482b4c3a87605"
 }
