@@ -1,7 +1,7 @@
 {
-  "version": "5.1.0",
-  "notes": "Facturi emise cu bonuri fiscale și încasări, plus separarea partenerilor persoane fizice și juridice\nBorderouri cu ciorne pe perioadă, resincronizare și un editor mai compact\nPrevizualizare PDF unificată, derulare continuă la semnare și poziție de semnătură memorată pe tip de document\nFiltre pe tipuri de date, antete îmbunătățite și separatoare în tabele\nCalendarul documentelor în meniul lateral și o selecție mai clară a perioadei în Situație casierie",
-  "download_url": "https://github.com/cosminalex61/registru-casa/releases/download/v5.1.0/RegistruCasa.zip",
-  "sha256": "109021feb77211a0362a8017c9d1396e353037f0a24e7e952d91c0635c4303db",
+  "version": "5.1.1",
+  "notes": "Facturi emise: marcare ca factură de avans, vizibilă direct în listă\nFacturi emise: câmp de observații la fiecare factură",
+  "download_url": "https://github.com/cosminalex61/registru-casa/releases/download/v5.1.1/RegistruCasa.zip",
+  "sha256": "be6f5f508f8d8d00779cf0dfc28dc75e4b5ba039c4bb34ec69629c8425684e89",
   "mandatory": false
 }
