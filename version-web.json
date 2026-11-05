@@ -1,7 +1,7 @@
 {
-  "version": "5.1.1",
-  "notes": "Facturi emise: marcare ca factură de avans, vizibilă direct în listă\nFacturi emise: câmp de observații la fiecare factură",
-  "download_url": "https://github.com/cosminalex61/registru-casa/releases/download/v5.1.1/RegistruCasa.zip",
-  "sha256": "be6f5f508f8d8d00779cf0dfc28dc75e4b5ba039c4bb34ec69629c8425684e89",
+  "version": "5.2.0",
+  "notes": "Pagina Azi: soldul casei, evoluția pe 14 zile, scadențele și observațiile, deasupra listei De rezolvat\nObservații automate: factură introdusă de două ori, sumă neobișnuită, sold estimat negativ\nÎnchiderea lunii arată întâi verificările lunii și confirmă vizual închiderea\nNumărătoarea casei pe bancnote și monede, cu butoane + / − și total care se actualizează\nCtrl K: scrie „plată 245 combustibil” sau „încasare 780 Z” și se deschide operațiunea completată\nUn PDF tras peste aplicație deschide factura nouă sau importul de extras; formularul de factură furnizor e refăcut\nCalendarul activității pe an în Situație casierie și Mașina timpului (administrator) pentru registrul de odinioară",
+  "download_url": "https://github.com/cosminalex61/registru-casa/releases/download/v5.2.0/RegistruCasa.zip",
+  "sha256": "d04d053a0599096d8afc88db45f56573cb510d214a4f50489eb51fa3d30656ed",
   "mandatory": false
 }
