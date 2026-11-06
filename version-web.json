@@ -1,7 +1,7 @@
 {
-  "version": "5.2.0",
-  "notes": "Pagina Azi: soldul casei, evoluția pe 14 zile, scadențele și observațiile, deasupra listei De rezolvat\nObservații automate: factură introdusă de două ori, sumă neobișnuită, sold estimat negativ\nÎnchiderea lunii arată întâi verificările lunii și confirmă vizual închiderea\nNumărătoarea casei pe bancnote și monede, cu butoane + / − și total care se actualizează\nCtrl K: scrie „plată 245 combustibil” sau „încasare 780 Z” și se deschide operațiunea completată\nUn PDF tras peste aplicație deschide factura nouă sau importul de extras; formularul de factură furnizor e refăcut\nCalendarul activității pe an în Situație casierie și Mașina timpului (administrator) pentru registrul de odinioară",
-  "download_url": "https://github.com/cosminalex61/registru-casa/releases/download/v5.2.0/RegistruCasa.zip",
-  "sha256": "d04d053a0599096d8afc88db45f56573cb510d214a4f50489eb51fa3d30656ed",
+  "version": "5.2.1",
+  "notes": "Aspect mai clar: font nou în antet și la sold, litere mai aerisite și mărimi armonizate în toate paginile\nButoanele, câmpurile și tabelele au aceleași dimensiuni peste tot; antetul nu mai are subtitlu\nMașina timpului se numește acum Istoric\nCtrl K te ajută cât scrii: completare cu Tab, luni scrise în cuvinte („oct”, „octombrie”) și sume cu punct\nLuna închisă blochează doar operațiunile din luna respectivă; lunile deschise din aceeași perioadă merg normal\nRedeschiderea unei luni cere un motiv, păstrat în istoricul lunii",
+  "download_url": "https://github.com/cosminalex61/registru-casa/releases/download/v5.2.1/RegistruCasa.zip",
+  "sha256": "c095816398f0eb6795334a4a2cad06c3b462ae065865b0012ffded05dc665375",
   "mandatory": false
 }
