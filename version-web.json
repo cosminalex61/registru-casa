@@ -1,7 +1,7 @@
 {
-  "version": "5.2.1",
-  "notes": "Aspect mai clar: font nou în antet și la sold, litere mai aerisite și mărimi armonizate în toate paginile\nButoanele, câmpurile și tabelele au aceleași dimensiuni peste tot; antetul nu mai are subtitlu\nMașina timpului se numește acum Istoric\nCtrl K te ajută cât scrii: completare cu Tab, luni scrise în cuvinte („oct”, „octombrie”) și sume cu punct\nLuna închisă blochează doar operațiunile din luna respectivă; lunile deschise din aceeași perioadă merg normal\nRedeschiderea unei luni cere un motiv, păstrat în istoricul lunii",
-  "download_url": "https://github.com/cosminalex61/registru-casa/releases/download/v5.2.1/RegistruCasa.zip",
-  "sha256": "c095816398f0eb6795334a4a2cad06c3b462ae065865b0012ffded05dc665375",
+  "version": "5.2.2",
+  "notes": "Borderouri mai sigure: plățile dublate, cele introduse după generare sau modificate după borderou sunt semnalate\nExtrasul BT nu mai e sursă pentru borderouri; verificări de date înainte de generare\nAzi nu mai propune borderouri pentru luni încheiate: le semnalează și poți vedea plățile care ar intra\nIstoric modificări pentru fiecare operațiune din Registru; calendar de perioadă în toate ecranele\nCâmpuri adâncite, carduri grafit pe tema întunecată, clopoțel și autentificare refăcute\nNumără casa are plăci simple, în stilul aplicației",
+  "download_url": "https://github.com/cosminalex61/registru-casa/releases/download/v5.2.2/RegistruCasa.zip",
+  "sha256": "04972c58a7b952dce45ee5e434acdc2e58cb3ddf771eb89f5742859d56407d6b",
   "mandatory": false
 }
