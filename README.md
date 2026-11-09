@@ -1,64 +1,38 @@
 # Registru de Casă
 
-Aplicație desktop Windows pentru evidența operațiunilor de casă, generarea documentelor justificative și organizarea PDF-urilor. Proiect personal, construit incremental: de la un registru local la o aplicație modulară cu backup, actualizare sigură și flux de documente.
+**Registru de Casă Web** este ediția principală pentru Windows. Aplicația rulează local și reunește registrul de casă, facturile, borderourile și arhiva de documente.
 
-**Interfața curentă este PySide6 / Qt.** Pachetul Windows este separat de datele locale; baza, documentele și configurările rămân protejate la actualizare.
+[**Descarcă Web 5.2.2 pentru Windows**](https://github.com/cosminalex61/registru-casa/releases/download/v5.2.2/RegistruCasa.zip) · [Noutăți în 5.2.2](https://github.com/cosminalex61/registru-casa/releases/tag/v5.2.2)
 
 <p align="center">
-  <img src="main.png" alt="Registru de Casă — interfața principală" width="920" />
+  <img src="web-azi.jpg" alt="Registru de Casă Web în tema întunecată, cu soldul casei, graficul ultimelor 14 zile, scadențe și plăți de verificat" width="1100">
 </p>
 
-## Ce rezolvă aplicația
+## Registru de Casă Web
 
-- registru de casă cu încasări, plăți, sold rulant și filtrare pe perioadă;
-- documente pe șabloane (borderouri bancă, cash, depuneri), exportabile ca PDF și pregătite pentru semnare;
-- arhivă unificată pentru PDF-uri, cu preview, localizare și selecție pentru email;
-- situație și rapoarte pe interval: flux de numerar și totaluri;
-- backup, rollback și migrare automată pentru baze SQLite mai vechi;
-- draft Gmail cu OAuth Desktop: se atașează fișierele selectate, trimiterea se confirmă în Gmail.
+- **Azi** arată soldul casei, scadențele și operațiunile de verificat.
+- **Registru** ține evidența încasărilor și a plăților, cu sold rulant, filtre pe perioadă și istoric al modificărilor.
+- **Facturi** urmărește scadențele, plățile parțiale și soldurile de recuperat. Facturile emise au un ecran dedicat.
+- **Borderouri și arhivă** reunesc pregătirea documentelor, centralizatoarele, previzualizarea PDF și ciornele Gmail cu atașamente.
+- **Paleta de comenzi rapide** oferă acces la acțiuni și pagini din tastatură cu <kbd>Ctrl</kbd> + <kbd>K</kbd>.
 
-## Arhitectură
+Toate capturile sunt din Web 5.2.2 și folosesc date fictive.
 
-Responsabilitățile sunt separate, ca o schimbare de interfață să nu afecteze evidența:
+| Registru · tema luminoasă | Facturi · tema întunecată |
+| --- | --- |
+| [![Registrul lunar în tema luminoasă](web-registru-light.jpg)](web-registru-light.jpg) | [![Facturi furnizori cu detaliile facturii și istoricul plăților](web-facturi.jpg)](web-facturi.jpg) |
 
-```text
-ui/          pagini, dialoguri, temă și componente Qt
-services/    documente, PDF, email, update și fluxuri de lucru
-data/        SQLite, migrații și persistență
-core/        configurare, căi, formatare, versiuni și bootstrap
-tests/       verificări pentru fluxurile critice
-```
-
-## Tehnologii
-
-| Zonă | Tehnologie | Rol |
-|---|---|---|
-| Limbaj | Python 3 | ecosistem desktop și documente |
-| UI | PySide6 / Qt | ferestre, tabele, calendare, temă light/dark |
-| Bază locală | SQLite + WAL | fără server, scrieri consistente |
-| PDF | ReportLab, PyMuPDF | generare și preview |
-| Documente | python-docx | șabloane Word și regenerare din date salvate |
-| Email | Gmail API + OAuth Desktop | draft cu atașamente, fără parole Google în aplicație |
-| Distribuție | PyInstaller | pachet Windows fără Python instalat |
-| Actualizare | GitHub Releases + `version.json` | update fără înlocuirea datelor locale |
-
-## Fluxuri
-
-1. Se înregistrează o operațiune; soldul se recalculează în SQLite.
-2. Documentele se completează în UI și devin PDF din șablon.
-3. Câmpurile rămân în bază, deci PDF-ul poate fi regenerat dacă dispare fișierul.
-4. Fișierul ajunge în arhivă: preview, semnare externă sau draft Gmail.
-5. Update-ul exclude baza `.db`, WAL/SHM, backup-urile, documentele și OAuth-ul.
-
-   <p align="center">
-  <img src="arhiva.png" alt="Registru de Casă — interfața principală" width="920" />
+<p align="center">
+  <img src="web-comenzi-rapide.jpg" alt="Paleta translucidă de comenzi rapide peste registrul de casă în tema luminoasă" width="1100"><br>
+  <em>Paleta de comenzi rapide, cu efect de sticlă peste registru.</em>
 </p>
 
+### Instalare și actualizare
 
-## Confidențialitate
+Descarcă și extrage arhiva Web, apoi pornește `RegistruCasa.exe`. Pentru o instalare Web existentă, intră ca administrator în **Administrare → Actualizare → Verifică actualizări**. [Manifest și sumă SHA-256 pentru Web](version-web.json)
 
-Repository-ul public prezintă arhitectura, deciziile de proiectare, o captură și release-uri Windows. Nu include baza de date, backup-uri, documente generate, token-uri OAuth sau sursa completă a produsului.
+Aplicația păstrează evidența într-o bază locală SQLite. Integrarea Gmail folosește OAuth și se activează la cererea utilizatorului. [Politica de confidențialitate](https://cosminalex61.github.io/confidentialitate.html)
 
-## Licență / uz
+## Istoric · ediția desktop Qt
 
-Proiect personal demonstrativ. Nu înlocuiește consultanța contabilă; utilizarea concretă trebuie adaptată procedurilor firmei.
+**Qt 4.0.3** este ultima versiune a ediției anterioare, construită cu PySide6. Pachetul Windows și notele versiunii rămân disponibile separat. [Release Qt 4.0.3](https://github.com/cosminalex61/registru-casa/releases/tag/v4.0.3) · [Manifest și sumă SHA-256 pentru Qt](version.json)
