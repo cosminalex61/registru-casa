@@ -24,7 +24,7 @@ Toate capturile sunt din Web 5.2.2 și folosesc date fictive.
 
 <p align="center">
   <img src="web-comenzi-rapide.jpg" alt="Paleta translucidă de comenzi rapide peste registrul de casă în tema luminoasă" width="1100"><br>
-  <em>Paleta de comenzi rapide, cu efect de sticlă peste registru.</em>
+  <em>Paleta de comenzi rapide</em>
 </p>
 
 ### Instalare și actualizare
