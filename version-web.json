@@ -1,7 +1,7 @@
 {
-  "version": "5.2.2",
-  "notes": "Borderouri mai sigure: plățile dublate, cele introduse după generare sau modificate după borderou sunt semnalate\nExtrasul BT nu mai e sursă pentru borderouri; verificări de date înainte de generare\nAzi nu mai propune borderouri pentru luni încheiate: le semnalează și poți vedea plățile care ar intra\nIstoric modificări pentru fiecare operațiune din Registru; calendar de perioadă în toate ecranele\nCâmpuri adâncite, carduri grafit pe tema întunecată, clopoțel și autentificare refăcute\nNumără casa are plăci simple, în stilul aplicației",
-  "download_url": "https://github.com/cosminalex61/registru-casa/releases/download/v5.2.2/RegistruCasa.zip",
-  "sha256": "04972c58a7b952dce45ee5e434acdc2e58cb3ddf771eb89f5742859d56407d6b",
+  "version": "5.2.3",
+  "notes": "Aplicația se deschide direct în Azi după autentificare.",
+  "download_url": "https://github.com/cosminalex61/registru-casa/releases/download/v5.2.3/RegistruCasa.zip",
+  "sha256": "49461a48bcd6363a2dd979dc892f84bebf3cb2f261aecb24ec84f933d8d8a349",
   "mandatory": false
 }
