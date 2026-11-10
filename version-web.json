@@ -1,7 +1,7 @@
 {
-  "version": "5.2.3",
-  "notes": "Aplicația se deschide direct în Azi după autentificare.",
-  "download_url": "https://github.com/cosminalex61/registru-casa/releases/download/v5.2.3/RegistruCasa.zip",
-  "sha256": "49461a48bcd6363a2dd979dc892f84bebf3cb2f261aecb24ec84f933d8d8a349",
+  "version": "5.2.4",
+  "notes": "Plăți recurente și o pagină Situație casierie refăcută.\nFacturi furnizori cu filtre glisante, căutare în Solduri de recuperat și reutilizarea partenerului după CUI.\nPrevizualizarea borderourilor arată doar plățile numărate. Data de început a verificărilor se poate regla din De rezolvat.\nNavigare mai lină, dialoguri care se redimensionează gradual și sugestii integrate la Explicații.",
+  "download_url": "https://github.com/cosminalex61/registru-casa/releases/download/v5.2.4/RegistruCasa.zip",
+  "sha256": "e13e80dd702825eb9ee2ebee901912ed3a414cd9d950dd83411f8ee1b4efcfdc",
   "mandatory": false
 }
