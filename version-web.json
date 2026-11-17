@@ -1,7 +1,7 @@
 {
-  "version": "5.2.5",
-  "notes": "La intrare, administratorul vede o fereastră când este disponibilă o actualizare, cu opțiunile Actualizează acum și Mai târziu.",
-  "download_url": "https://github.com/cosminalex61/registru-casa/releases/download/v5.2.5/RegistruCasa.zip",
-  "sha256": "813278bf7de2e717ab7d8bb01b4b33dce6ef9a8fa6ecba19d4c6f0df5cdfbd06",
+  "version": "5.2.6",
+  "notes": "Dialogul de plată arată dacă se adaugă, se asociază sau se modifică o operațiune în Registru.\nDatele De la și Până la se pot scrie direct în calendar. Perioadele rapide au o listă simplificată.\nBara de derulare nu mai apare temporar la redimensionarea dialogurilor.\nPagina Azi, căutarea Ctrl+K și tabelele de facturi au o afișare mai clară și opțiuni de coloană mai ușor de folosit.",
+  "download_url": "https://github.com/cosminalex61/registru-casa/releases/download/v5.2.6/RegistruCasa.zip",
+  "sha256": "55c2deed6c7c0c86699384a450147305c7301ecbd30c423393e4c9c5d07e1a6f",
   "mandatory": false
 }
