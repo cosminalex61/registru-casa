@@ -1,7 +1,7 @@
 {
-  "version": "5.2.6",
-  "notes": "Dialogul de plată arată dacă se adaugă, se asociază sau se modifică o operațiune în Registru.\nDatele De la și Până la se pot scrie direct în calendar. Perioadele rapide au o listă simplificată.\nBara de derulare nu mai apare temporar la redimensionarea dialogurilor.\nPagina Azi, căutarea Ctrl+K și tabelele de facturi au o afișare mai clară și opțiuni de coloană mai ușor de folosit.",
-  "download_url": "https://github.com/cosminalex61/registru-casa/releases/download/v5.2.6/RegistruCasa.zip",
-  "sha256": "55c2deed6c7c0c86699384a450147305c7301ecbd30c423393e4c9c5d07e1a6f",
+  "version": "5.2.7",
+  "notes": "În Facturi, coloana Furnizor rămâne vizibilă la derularea orizontală, oricât de lată ar fi.\nÎn Arhivă, coloanele se îngustează când deschizi un document, ca informațiile să încapă lângă previzualizare.\nButonul Deschide în alt program plutește peste PDF, fără bandă în spate.",
+  "download_url": "https://github.com/cosminalex61/registru-casa/releases/download/v5.2.7/RegistruCasa.zip",
+  "sha256": "0a857a400486d19c2d417e736ed05524bcf0ebfd18aacbac66deafba10880281",
   "mandatory": false
 }
