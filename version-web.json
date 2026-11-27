@@ -1,7 +1,7 @@
 {
-  "version": "5.2.8",
-  "notes": "Plățile deja trecute în Registru se asociază unei facturi în bloc: aplicația le bifează pe cele potrivite, iar perioada se poate alege.\nLa o plată nouă în Registru, aplicația propune factura furnizorului; plata se poate asocia direct sau factura se poate înregistra imediat după.\nÎn Registru, data apare pe fiecare rând, zilele se disting mai clar, iar căutarea găsește și fără diacritice sau după numărul facturii.\nOperațiunile din Registru asociate unei facturi arată factura și o deschid. Ștergerea unei plăți nu mai șterge operațiunea care a fost doar asociată.\nÎn Calendar documente, plățile dintr-un borderou asociate ulterior cu o factură nu mai apar ca lipsă.\nAnimația bonului fiscal pornește corect la prima bifare, iar confirmarea la închiderea unui formular nesalvat este mai clară.",
-  "download_url": "https://github.com/cosminalex61/registru-casa/releases/download/v5.2.8/RegistruCasa.zip",
-  "sha256": "ed01b030957ae233c0d10af764b498dc2700db1cadfb7019a6dd9f0e3f731870",
+  "version": "5.2.9",
+  "notes": "Facturi și Facturi emise au aceeași așezare: filtrele, căutarea și butonul Factură nouă stau în aceleași locuri. Coloana Observații apare și în Compact.\nDetaliile unei facturi emise arată clar suma încasată, restul de încasat și istoricul încasărilor.\nÎn Arhivă, lista arată starea fiecărui document și istoricul trimiterilor, iar PDF-ul se deschide pe tot ecranul.\nLa asocierea plăților din Registru cu o factură, apar întâi plățile de după data facturii; cele anterioare apar doar dacă menționează furnizorul.\nSituația casieriei este mai compactă și are culori mai clare.\nText și butoane de dimensiuni unitare pe toate paginile, bare și meniuri din sticlă mată, iar modul întunecat folosește un gri neutru. Calendarul nu mai derulează orizontal, iar notificările se văd și în modul luminos.",
+  "download_url": "https://github.com/cosminalex61/registru-casa/releases/download/v5.2.9/RegistruCasa.zip",
+  "sha256": "bbebb9b06713c6d969f9192faa38ff300381d48c936f0ac448882e3510f4600b",
   "mandatory": false
 }
